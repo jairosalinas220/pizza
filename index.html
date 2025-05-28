@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">
+            <h1>Pizza's Chara</h1>
+        </a>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Menú</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Ubicación</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Reservas</a>
+                </li>
+            </ul>
+        </nav>
+        <button>(01)9999-999</button>
+    </header>
+    <main>
+        <section class="hero__section">
+        <div class="hero__content">
+            <h1 class="hero__title">¡Bienvenido a Pizza's Chara!</h1>
+            <p class="hero__description">Disfruta de las mejores pizzas de la ciudad, hechas con ingredientes frescos y de alta calidad.</p>
+        </div>
+        <img class="hero__img" src="pizza.png" alt="Delicious Pizza">
+        </section>
+        <section class="menu">
+            <div class="menu__tabs">
+                <button class="menu__tab menu__tab-active" id="pizza">Pizzas</button>
+                <button class="menu__tab" id="pasta">Pastas</button>
+                <button class="menu__tab" id="bebida">Bebidas</button>
+                <button class="menu__tab" id="postre">Postres</button>
+            </div>
+            <div class="menu__container">
+                <div class="menu__items menu__items-active" id="pizza-items">
+                    <div class="menu__item">
+                        <img src="img/zach-lisko-IUo-GtVEjSI-unsplash.jpg" alt="Pizza Pepperoni">
+                        <div class="menu__item__details">
+                            <h3>Pizza Pepperoni</h3>
+                            <p>Pepperoni, queso mozzarella, salsa de tomate.</p>
+                            <span class="price">S/ 35.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <img src="img/engin-akyurt-6k5cGTWluTs-unsplash.jpg" alt="Pizza Cuatro Quesos">
+                        <div class="menu__item__details">
+                            <h3>Pizza Cuatro Quesos</h3>
+                            <p>Mezcla de mozzarella, parmesano, gorgonzola y cheddar.</p>
+                            <span class="price">S/ 38.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__items" id="pasta-items">
+                    <div class="menu__item">
+                        <img src="img/albondiga.jpg" alt="Spaghetti con Albóndigas">
+                        <div class="menu__item__details">
+                            <h3>Spaghetti con Albóndigas</h3>
+                            <p>Pasta con salsa de tomate casera y albóndigas de res.</p>
+                            <span class="price">S/ 28.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <img src="img/macarrones.jpg" alt="Macarrones con Queso">
+                        <div class="menu__item__details">
+                            <h3>Macarrones con Queso</h3>
+                            <p>Macarrones gratinados con salsa cremosa de queso cheddar.</p>
+                            <span class="price">S/ 26.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__items" id="bebida-items">
+                    <div class="menu__item">
+                        <img src="img/cocacola.jpg" alt="Coca-Cola">
+                        <div class="menu__item__details">
+                            <h3>Coca-Cola 500ml</h3>
+                            <p>Bebida gaseosa refrescante clásica.</p>
+                            <span class="price">S/ 5.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <img src="img/naranja.jpg" alt="Jugo de Naranja">
+                        <div class="menu__item__details">
+                            <h3>Jugo de Naranja Natural</h3>
+                            <p>Jugo recién exprimido, sin azúcar añadida.</p>
+                            <span class="price">S/ 7.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <img src="img/david-foodphototasty-h7a8RsZFzgc-unsplash.jpg" alt="Limonada">
+                        <div class="menu__item__details">
+                            <h3>Limonada Fresca</h3>
+                            <p>Hecha con limones naturales, hielo y un toque de menta.</p>
+                            <span class="price">S/ 6.50</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__items" id="postre-items">
+                    <div class="menu__item">
+                        <img src="img/brownie.jpg" alt="Brownie con Helado">
+                        <div class="menu__item__details">
+                            <h3>Brownie con Helado</h3>
+                            <p>Brownie de chocolate caliente con bola de helado de vainilla.</p>
+                            <span class="price">S/ 12.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <img src="img/pan.jpg" alt="Pan de Ajo Dulce">
+                        <div class="menu__item__details">
+                            <h3>Pan de Ajo Dulce</h3>
+                            <p>Pan suave con mantequilla dulce y glaseado de vainilla.</p>
+                            <span class="price">S/ 9.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <img src="img/inna-safa-BmrXxbVuqTc-unsplash.jpg" alt="Galleta Gigante">
+                        <div class="menu__item__details">
+                            <h3>Galleta Gigante</h3>
+                            <p>Cookie de chocolate horneada al momento, crujiente por fuera.</p>
+                            <span class="price">S/ 10.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                    <div class="menu__item">
+                        <img src="img/deepthi-clicks-oG4IfoPn68Y-unsplash.jpg" alt="Cheesecake de Fresa">
+                        <div class="menu__item__details">
+                            <h3>Cheesecake de Fresa</h3>
+                            <p>Pastel de queso cremoso con cobertura de fresas naturales.</p>
+                            <span class="price">S/ 14.00</span>
+                            <button class="menu__item__details--button">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__columns">
+            <div class="footer__column">
+                <h3 class="footer__column__title">Menú</h3>
+                <ul class="footer__column__list">
+                    <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Pizza</a></li>
+                    <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Pastas</a></li>
+                    <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Bebidas</a></li>
+                    <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Postres</a></li>
+                </ul>
+            </div>
+        <div class="footer__column">
+            <h3 class="footer__column__title">Politicas</h3>
+        <ul class="footer__column__list">
+            <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Términos y condiciones online</a></li>
+            <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Campañas</a></li>
+            <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Política de Privacidad</a></li>
+            <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Condiciones de Uso</a></li>
+            <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Políticas de Delivery</a></li>
+        </ul>
+        </div>
+        <div class="footer__column">
+            <h3 class="footer__column__title">Ayuda y Servicio</h3>
+            <img src="img/libro_reclamaciones.png" alt="Libro de Reclamaciones" width="170" height="105">
+            <ul class="footer__column__list">
+                <li>
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Libro de Reclamaciones</a>
+                </li>
+                <li>
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Zonas de Reparto Lima</a>
+                </li>
+                <li>
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Contáctanos</a>
+                </li>
+                <li>
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Comprobante Electrónico</a>
+                </li>
+                <li>
+                    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf3egU7cau8dZhjS490xdpQ5yuUlOcY-T2-A&s">Preguntas frecuentes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>© 2024 Pizza's Chara  Inc. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
